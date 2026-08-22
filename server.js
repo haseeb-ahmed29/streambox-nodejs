@@ -1,0 +1,1 @@
+const http=require('http'); const fs=require('fs'); const path=require('path'); http.createServer((req,res)=>{let p=path.join(__dirname,req.url==='/'?'index.html':req.url); if(!fs.existsSync(p)) p=path.join(__dirname,'index.html'); res.end(fs.readFileSync(p));}).listen(3000,()=>console.log('Server on http://localhost:3000'));

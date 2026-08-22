@@ -1,0 +1,9 @@
+{
+  "name": "streambox-nodejs",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "start": "npx serve .",
+    "test": "node -e \"console.log('UI routes ready')\""
+  }
+}
